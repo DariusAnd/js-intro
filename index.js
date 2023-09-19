@@ -10,7 +10,7 @@ Palyginimas / salygos
 Ciklai
 Funkcijos
 Ivykiai
-/*
+*/
 
 
 // single line comment
@@ -19,5 +19,5 @@ Ivykiai
     multi
     line
     comment
-/*
-
+*/
+//Multi kursorius
