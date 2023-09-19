@@ -1,15 +1,16 @@
 //Kintamieji - kur laikoma informacija
-//Palyginimas / salygos
-//Ciklai
-//Funkcijos
-//Ivykiai
+//Palyginimas / salygos - "jei..., priesingu atveju..."
+//Ciklai - kartojimai
+//Funkcijos - loginiu zingsniu visuma, kuria galima atkartoti, kai reikia
+//Ivykiai - kai vartotojas: paspaudzia mygtuka, etc
+
 
 /*
 Kintamieji - kur laikoma informacija
-Palyginimas / salygos
-Ciklai
-Funkcijos
-Ivykiai
+Palyginimas / salygos - "jei..., priesingu atveju..."
+Ciklai - kartojimai
+Funkcijos - loginiu zingsniu visuma, kuria galima atkartoti, kai reikia
+Ivykiai - kai vartotojas: paspaudzia mygtuka, etc
 */
 
 
