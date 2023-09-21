@@ -35,10 +35,10 @@ const pazymioPozicija = pazymiai.lenght -1;
 const paskutinisPazymys = pazymiai[pazymiai.length -1];
 console.log(paskutinisPazymys);
 
-
+// Masyvas pazymiu:
 //Suskaiciuoti pazymiu vidurki ir isvesti sakiny:
 //'Studentu pazymiu vidurkis yra:'
 
 //Masyvas vietovardziu:
 //Suformuoti sakini:
-//"Musu aplankytos vietos: Vieta1, Vieta2, Vieta3"
+//"Musu aplankytos vietos: Vieta1, Vieta2, Vieta3."
