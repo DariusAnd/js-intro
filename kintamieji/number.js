@@ -54,3 +54,23 @@ const exp5 = 2 ** 2;
 const exp6 = 2 ** 3;
 
 console.log(exp4, exp5, exp6);
+
+const begalybe = Infinity; //butinai is didziosios!
+const minusBegalybe = -Infinity;
+
+const x = 5 / 0;
+console.log(x);
+
+const k = -5 / 0;
+console.log(k);
+
+// not-a-number = NaN
+
+const n = NaN;
+console.log(n, NaN);
+
+const liekana = 7 % 5;
+console.log(liekana);
+
+const liekana2 = 65 % 12;
+console.log (liekana2);
