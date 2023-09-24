@@ -42,3 +42,15 @@ console.log(paskutinisPazymys);
 //Masyvas vietovardziu:
 //Suformuoti sakini:
 //"Musu aplankytos vietos: Vieta1, Vieta2, Vieta3."
+
+const skaiciai = [9, 8, 6, 10, 8, 7];
+const suma = skaiciai[0] + skaiciai[1] + skaiciai[2] + skaiciai[3] + skaiciai[4] + skaiciai[5];
+const vidurkis = suma / skaiciai.length;
+
+console.log('Studentų pažymių vidurkis yra: ', vidurkis);
+
+
+const vietos = ['Kaunas,', 'Klaipėda,', 'Skuodas,', 'Vilnius,', 'Šiauliai.'];
+
+console.log('Mūsų aplankytos vietos:', vietos[0], vietos[1], vietos[2], vietos[3], vietos[4]);
+
