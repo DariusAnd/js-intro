@@ -195,4 +195,3 @@ console.log(++klausimas);
 console.log(++klausimas);
 
 console.log('==============');
-console.clear();
