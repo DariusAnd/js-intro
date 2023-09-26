@@ -41,4 +41,52 @@ console.log(jonas['age'], jonas.age);
 console.log(jonas['isMarried'], jonas.isMarried);
 
 jonas.age++
+jonas.age = 100;
 console.log(jonas);
+
+jonas.isMarried = false;
+console.log(jonas);
+
+jonas.name = 'John';
+console.log(jonas);
+
+const arr = [1, 2, 3, 4];
+console.log(arr);
+
+arr[1] = 22;
+console.log(arr);
+
+console.clear();
+
+const a = 1;
+const b = a;
+console.log('a: ', a, 'b: ', b); //1:10h
+
+const c = [1, 2];
+const d = c;
+console.log('c: ', c, 'd:', d);
+
+c[0] = 111;
+console.log('c: ', c, 'd:', d);
+
+d[1] = 222;
+console.log('c: ', c, 'd:', d);
+
+d[2] = 333;
+console.log('c: ', c, 'd:', d); //01:16h
+
+const e = {name: 'Edgaras', age: 99};
+const f = e;
+
+console.log('e:', e);
+console.log('f:', f);
+
+e.name = 'Fiona';
+
+console.log('e:', e);
+console.log('f:', f);
+
+f.age = '35';
+
+console.log('e:', e);
+console.log('f:', f);
