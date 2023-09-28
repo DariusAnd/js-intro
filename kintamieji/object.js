@@ -107,3 +107,22 @@ f.age = '35';
 
 console.log('e:', e);
 console.log('f:', f);
+
+
+const abc = {
+    65: a
+}
+
+if (abc[65] === 'a') {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+const user = {
+    name: 'Jonas',
+    age: 99,
+    'is married': true,
+}
+
+user['is married']; // - sintakse
