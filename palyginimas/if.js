@@ -1,17 +1,19 @@
 /*
 IF - palyginimo salyga
 
+Palyginimo operatoriai:
+- visi: >, <, ==, ===, >=, <=, !=, !==
+- naudotini: >, <, ===, >=, <=, !==
+- nenaudotini: ==, !=
+Loginiai operatoriai:
+&&, ||, !
+
 kodo sablonai:
 if () {} // Ats pateikiamas tik esant atitikimui uzduotai salygai.
 if () {} else {}
 if () {} else if () {}
 if () {} ... else if () {}
 if () {} ... else if () {} ... else {}
-
-Palyginimo operatoriai:
-- visi: >, <, ==, ===, >=, <=, !=, !==
-- naudotini: >, <, ===, >=, <=, !==
-- nenaudotini: ==, !=
 */
 
 console.clear();
@@ -162,3 +164,30 @@ if (parosMetas === 'diena') {
     } else {
         console.log('Ne daugiau');
     }
+
+    // !== vs != 
+    // === vs == : !=, == - leidzia palyginti reiksmes net ir skirtingu tipu
+    // kintamuju, pvz number ir string, !== ir === to daryti neleidzia
+
+if (7 === '7') {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+const w = 'abba';
+const e = 'boney m';
+
+if (w > e) {
+    console.log(`'${w}' yra daugiau uz '${e}'`);
+} else {
+    console.log(`'${w}' yra maziau arba lygu uz '${e}'`);
+}
+
+// !true
+// !false
+if (!false){
+    console.log('gg')
+} else {
+    console.log('fail...')
+}
