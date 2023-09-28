@@ -48,8 +48,6 @@ console.log(labasRytas());
 console.log(labasRytas());
 console.log(labasRytas());
 
-console.clear();
-
 //1)=========
 //Jonas turejo 9 jubilieju/-s!
 
@@ -99,8 +97,6 @@ console.log(jubiliejai('Ona', 32));
 
 console.log(jubiliejai(55, 'Artas'));
 
-console.clear();
-
 function studentAverage(name, marks) {
     let totalSum = 0;
     let i = 0;
@@ -109,6 +105,7 @@ function studentAverage(name, marks) {
     // totalSum += marks[2];
     // totalSum += marks[3];
     // totalSum += marks[4];
+    
     totalSum += marks[i++];
     totalSum += marks[i++];
     totalSum += marks[i++];
