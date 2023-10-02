@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "method:string": "nodemon ./method/string.js",
     "method:number": "nodemon ./method/number.js",
     "exercise": "nodemon ./kintamieji/exercise.js",
     "for": "nodemon ./ciklas/for.js",
