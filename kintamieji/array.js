@@ -146,6 +146,9 @@ console.log(colors);
 colors[1] = 'žalia';
 console.log(colors);
 
+colors[3] = 'melyna;';
+console.log(colors);
+
 const name = 'Chuck';
 console.log(name[0]);
 console.log(name[1]);
