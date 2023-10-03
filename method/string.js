@@ -135,3 +135,69 @@ console.log(r8);
 r8 = r8.replace('a', 'o');
 console.log(r8);
 
+console.clear();
+
+const kopustas = 'kopustas';
+console.log(kopustas.slice(0, 0));
+console.log(kopustas.slice(0, 1));
+console.log(kopustas.slice(0, 2));
+console.log(kopustas.slice(0, 3));
+console.log(kopustas.slice(1, 4));
+console.log(kopustas.slice(4, 7));
+console.log(kopustas.slice(-3));
+
+const pvz = 'Labas rytas suraitytas vistos koja parasytas!'
+console.log(pvz.split('x'));
+console.log(pvz.split('a')); //.split() sukarpo teksta
+console.log(pvz.split(' '));
+
+const pvz2 = 'vasara';
+const pvz2PoSplit = pvz2.split('a');
+console.log(pvz2PoSplit);
+
+console.log('sasasasas'.split('a'));
+console.log('sasasasas'.split('s'));
+
+console.log('x'.split('x'));
+console.log('asdas'.split('asdas'));
+console.log(''.split(''));
+console.log('labas'.split(''));
+
+// ~45min praleidau
+
+
+console.log('Vasara'.startsWith('a'));
+console.log('Vasara'.startsWith('v'));
+console.log('Vasara'.startsWith('V'));
+console.log('Vasara'.startsWith('Vas'));
+console.log('Vasara'.startsWith(''));
+console.log(''.startsWith(''));
+
+
+console.log('Vasara'.endsWith('a'));
+console.log('Vasara'.endsWith('x'));
+console.log('Vasara'.endsWith('u'));
+console.log('Vasara'.endsWith('ara'));
+console.log(''.endsWith(''));
+
+console.clear();
+
+const pasaka = 'Ryto pasaka: Apie Jonuka ir Gretute.';
+const pasakaUppercase = pasaka.toUpperCase();
+const pasakaLowercase = pasaka.toLowerCase();
+
+console.log(pasaka);
+console.log(pasakaUppercase);
+console.log(pasakaLowercase);
+
+const tarpai = '       labas      '
+const beTarpu = tarpai.trim();
+console.log(beTarpu);
+console.log(`"${tarpai}"`);
+console.log(`"${beTarpu}"`);
+
+const tarpai2 = '       labas       rytas      '
+console.log(`"${tarpai2}"`);
+console.log(`"${tarpai2.trim()}"`);
+
+console.clear();
