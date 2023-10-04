@@ -6,7 +6,9 @@
   "scripts": {
     "method:string": "nodemon ./method/string.js",
     "method:number": "nodemon ./method/number.js",
-    "exercise": "nodemon ./kintamieji/exercise.js",
+    "vardas": "nodemon ./uzdaviniai/vardas.js",
+    "tarpai": "nodemon ./uzdaviniai/tarpai.js",
+    "exercise": "nodemon ./uzdaviniai/exercise.js",
     "for": "nodemon ./ciklas/for.js",
     "if": "nodemon ./palyginimas/if.js",
     "function": "nodemon ./funkcijos/function.js",
