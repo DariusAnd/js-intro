@@ -45,10 +45,10 @@ if (a > b) {
     console.log(`A nera daugiau uz B`);
     //console.log(`A yra maziau arba lygu uz B`);
 }
-
+console.clear();
 //===================
 
-const day = 4;
+const day = 2;
 
 // 1 2 3 4 5 6 7
 // 8 9 10 11 12 13 14
@@ -74,9 +74,9 @@ if (day % 7 == 1) {
 }
 
 console.clear();
-// Kodo nestinimas
+// // Kodo nestinimas
 
-const diena = 99;
+const diena = 24;
 
 if (diena % 7 === 1) {
     console.log(`Pirmadienis`);
@@ -110,84 +110,84 @@ if (diena % 7 === 1) {
 
 
 
-/*
-Gali buti:
-- diena / naktis
-- lyja / nelyja
-*/
+// /*
+// Gali buti:
+// - diena / naktis
+// - lyja / nelyja
+// */
 
-const parosMetas = 'diena';
-const arLyja = true;
-const temp = -1;
-const kadasilta = 20;
-const arAsSuStriuke = true;
+// const parosMetas = 'diena';
+// const arLyja = true;
+// const temp = -1;
+// const kadasilta = 20;
+// const arAsSuStriuke = true;
 
-if (parosMetas === 'diena') {
-    if (arLyja) {
-        console.log('Diena, lyja');
-    } else {
-        console.log('Diena, sausa');
-    }
-} else {
-    if (arLyja) {
-        console.log('Naktis, lyja');
-    } else {
-        console.log('Naktis, nelyja');
-        }
-    }
+// if (parosMetas === 'diena') {
+//     if (arLyja) {
+//         console.log('Diena, lyja');
+//     } else {
+//         console.log('Diena, sausa');
+//     }
+// } else {
+//     if (arLyja) {
+//         console.log('Naktis, lyja');
+//     } else {
+//         console.log('Naktis, nelyja');
+//         }
+//     }
 
-    if (parosMetas === 'diena' && arLyja === true && temp >= kadasilta){
-        console.log('Diena, lyja, silta');        
-    } else if (parosMetas === 'diena' && arLyja === true && temp < kadasilta){
-        console.log('Diena, lyja, salta');        
-    } else if (parosMetas === 'diena' && arLyja === false && temp >= kadasilta) {
-        console.log('Diena, nelyja, silta');    
-    } else if (parosMetas === 'diena' && arLyja === false && temp < kadasilta) {
-        console.log('Diena, nelyja, salta');    
-    } else if (parosMetas === 'naktis' && arLyja === true && temp >= kadasilta) {
-        console.log('Naktis, lyja, silta');
-    } else if (parosMetas === 'naktis' && arLyja === true && temp < kadasilta) {
-        console.log('Naktis, lyja, salta');
-    } else if (parosMetas === 'naktis' && arLyja === false && temp >= kadasilta) {
-        console.log('Naktis, nelyja, silta');
-    } else if (parosMetas === 'naktis' && arLyja === false && temp < kadasilta) {
-        console.log('Naktis, nelyja, salta');
-    }
+//     if (parosMetas === 'diena' && arLyja === true && temp >= kadasilta){
+//         console.log('Diena, lyja, silta');        
+//     } else if (parosMetas === 'diena' && arLyja === true && temp < kadasilta){
+//         console.log('Diena, lyja, salta');        
+//     } else if (parosMetas === 'diena' && arLyja === false && temp >= kadasilta) {
+//         console.log('Diena, nelyja, silta');    
+//     } else if (parosMetas === 'diena' && arLyja === false && temp < kadasilta) {
+//         console.log('Diena, nelyja, salta');    
+//     } else if (parosMetas === 'naktis' && arLyja === true && temp >= kadasilta) {
+//         console.log('Naktis, lyja, silta');
+//     } else if (parosMetas === 'naktis' && arLyja === true && temp < kadasilta) {
+//         console.log('Naktis, lyja, salta');
+//     } else if (parosMetas === 'naktis' && arLyja === false && temp >= kadasilta) {
+//         console.log('Naktis, nelyja, silta');
+//     } else if (parosMetas === 'naktis' && arLyja === false && temp < kadasilta) {
+//         console.log('Naktis, nelyja, salta');
+//     }
 
-    console.clear()
+//     console.clear()
 
-    const g = 7;
-    const h = 5;
+//     const g = 7;
+//     const h = 5;
 
-    if (g > h) {
-        console.log('Daugiau');
-    } else {
-        console.log('Ne daugiau');
-    }
+//     if (g > h) {
+//         console.log('Daugiau');
+//     } else {
+//         console.log('Ne daugiau');
+//     }
 
-    // !== vs != 
-    // === vs == : !=, == - leidzia palyginti reiksmes net ir skirtingu tipu
-    // kintamuju, pvz number ir string, !== ir === to daryti neleidzia
+//     // !== vs != 
+//     // === vs == : !=, == - leidzia palyginti reiksmes net ir skirtingu tipu
+//     // kintamuju, pvz number ir string, !== ir === to daryti neleidzia
 
-if (7 === '7') {
-    console.log(true);
-} else {
-    console.log(false);
-}
+// if (7 === '7') {
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
 
-const w = 'abba';
-const e = 'boney m';
+// const w = 'abba';
+// const e = 'boney m';
 
-if (w > e) {
-    console.log(`'${w}' yra daugiau uz '${e}'`);
-} else {
-    console.log(`'${w}' yra maziau arba lygu uz '${e}'`);
-}
+// if (w > e) {
+//     console.log(`'${w}' yra daugiau uz '${e}'`);
+// } else {
+//     console.log(`'${w}' yra maziau arba lygu uz '${e}'`);
+// }
 
-// !true
-// !false
-if (!false){
-    console.log('gg')
-} else {
-    console.log('fail...')
-}
+// // !true
+// // !false
+// if (!false){
+//     console.log('gg')
+// } else {
+//     console.log('fail...')
+// }

@@ -93,7 +93,7 @@ function jubiliejai(userName, age) {
 console.log(jubiliejai('Jonas', 105));
 console.log(jubiliejai('Maryte', 53));
 console.log(jubiliejai('Petras', 67));
-console.log(jubiliejai('Ona', 32));
+console.log(jubiliejai('Ona', 33));
 
 console.log(jubiliejai(55, 'Artas'));
 

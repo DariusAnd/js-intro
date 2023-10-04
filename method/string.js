@@ -200,4 +200,4 @@ const tarpai2 = '       labas       rytas      '
 console.log(`"${tarpai2}"`);
 console.log(`"${tarpai2.trim()}"`);
 
-console.clear();
+
