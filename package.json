@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "method:array": "nodemon ./method/array.js",
     "method:string": "nodemon ./method/string.js",
     "method:number": "nodemon ./method/number.js",
     "vardas": "nodemon ./uzdaviniai/vardas.js",
