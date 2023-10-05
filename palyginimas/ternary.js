@@ -27,7 +27,7 @@ console.log('>>>', zinute2)
 const zinute3 = amzius < limitas ? 'Sorry...' : 'Uzeik!';
 
 console.log('>>>', zinute3)
-console.log('----------------------------------------')
+console.log('------------------')
 //---------------------------------------------------------------
 // Visi skaiciai atsako pozityviai - 'true', iskyrus nuli!!!
 // 0 = 'false'!!!
@@ -49,7 +49,6 @@ const q2a = 0 < 1
                 : 3;
 
 console.log(q2a);
-//-------------------------------------------------------
 //-------------------------------------------------------
 
 const q3 = 0 === 1 ? 2 : 3;
