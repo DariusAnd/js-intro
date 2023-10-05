@@ -86,16 +86,37 @@ const firstLetter4 = str => {
     return str[0];
 }   
 
-const firstLetter5 = str => {                 
-    if (typeof str !== 'string') {
-        return 'Error: ne tekstas';
-    }
-    if (str.length === 0) {
-        return 'Error: zody nera simboliu!';
-    } 
-    return str[0];
+const firstLetter5 = str => {             
+    return typeof str !== 'string'
+        ? 'Error: ne tekstas'
+        : str.length === 0
+            ?  'Error: zody nera simboliu!'
+            : str[0];
 }   
+
+const firstLetter6 = str => typeof str !== 'string'   
+    ? 'Error: ne tekstas'
+    : str.length
+        ? str[0]
+        :  'Error: zody nera simboliu!'
+
+const errors = {
+    notString: 'Ne tekstas',
+    empty: 'Zody nera simboliu',
+}
+const firstLetter7 = str => typeof str !== 'string'   
+    ? errors.notString
+    : str.length
+        ? str[0]
+        : errors.empty;
+
+
 console.log(firstLetter(5));
 console.log(firstLetter(''));
 console.log(firstLetter('Labas'));
-console.log(firstLetter('Balalaika'));
+console.log(firstLetter2('Labas'));
+console.log(firstLetter3('Labas'));
+console.log(firstLetter4('Labas'));
+console.log(firstLetter5(''));
+console.log(firstLetter6('Balalaika'));
+console.log(firstLetter7('Balalaika'));
