@@ -87,7 +87,64 @@ const abcJoin = abc.join();
 const abcJoin2 = abc.join('-');
 const abcJoin3 = abc.join(', ');
 const abcJoin4 = abc.join(' -==- ');
+
 console.log(abcJoin, typeof abcJoin);
 console.log(abcJoin2);
 console.log(abcJoin3);
 console.log(abcJoin4);
+
+console.clear();
+
+const flowers = [];
+flowers.push('Kardelis'); // .push() - ikelia elementa i masyvo gala
+console.log(flowers);
+flowers.push('Roze');
+console.log(flowers);
+flowers.push('Tulpe');
+console.log(flowers);
+flowers.push('Narcizas');
+console.log(flowers);
+
+flowers.pop(flowers); //.pop() - isima paskutini nari
+console.log(flowers);
+
+flowers.shift(flowers); //.shift() - isima pirma nari
+console.log(flowers);
+
+flowers.unshift('Ruta'); //.unshift() - ikelia pirma nari
+console.log(flowers);
+
+console.log('_________________')
+
+console.log(flowers);
+console.log(flowers.reverse());
+console.log(flowers);
+console.log(flowers.reverse());
+console.log(flowers);
+
+console.log('_________________')
+console.log('')
+
+const numbers = [1, 2, 3, 4, 5, 6 ,7, 8, 9, 10];
+const numbers4 = numbers.slice(4); 
+const numbers46 = numbers.slice(4, 6); // .slice - isima imtinai nuo, bet iki jau nebe imtinai!
+const numbers03 = numbers.slice(0, 3); 
+const numbers01 = numbers.slice(0, 1); 
+
+console.log(numbers4);
+console.log(numbers46);
+console.log(numbers03);
+console.log(numbers01);
+console.log('+++++++++++++++++');
+
+
+// console.log(numbers);
+// numbers.splice(3, 0) - istrina 0 is eiles narius, einancius po 3io elemento.
+// numbers.splice(3, 2) - istrina 2 is eiles narius, einancius po 3io elemento.
+numbers.splice(2, 4, 11, 12, 13, 14, 15);   // istrina 4 narius, einancius po
+                                            // II-o elemento, ir ikelia '11, 12, 13, 14, 15' istrintu vietoj.
+
+console.log(numbers);
+// numbers.splice(3)
+// console.log(numbers);
+
