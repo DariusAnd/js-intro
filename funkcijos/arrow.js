@@ -118,5 +118,5 @@ console.log(firstLetter2('Labas'));
 console.log(firstLetter3('Labas'));
 console.log(firstLetter4('Labas'));
 console.log(firstLetter5(''));
-console.log(firstLetter6('Balalaika'));
-console.log(firstLetter7('Balalaika'));
+console.log(firstLetter6('Bilekas'));
+console.log(firstLetter7('Ne kazka'));

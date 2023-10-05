@@ -21,4 +21,7 @@ Ivykiai - kai vartotojas: paspaudzia mygtuka, etc
     line
     comment
 */
-//Multi kursorius
+// Multi kursorius?
+
+
+
