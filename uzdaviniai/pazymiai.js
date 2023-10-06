@@ -34,7 +34,6 @@ console.log(marksAverage(marks2))
 console.log(marksAverage(marks3))
 console.log(marksAverage(marks4))
 console.log(marksAverage(marks5))
-
 console.log('=====================')
 
 // 1)
