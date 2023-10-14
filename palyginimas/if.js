@@ -4,7 +4,7 @@ IF - palyginimo salyga
 Palyginimo operatoriai:
 - visi: >, <, ==, ===, >=, <=, !=, !==
 - naudotini: >, <, ===, >=, <=, !==
-- nenaudotini: ==, !=
+- nenaudotini: ==, !=   (neegzistuojantys !<, !>)
 Loginiai operatoriai:
 &&, ||, !
 
@@ -135,7 +135,7 @@ if (diena % 7 === 1) {
 //         console.log('Naktis, nelyja');
 //         }
 //     }
-
+            // 46 grupe, 13 video 26min.
 //     if (parosMetas === 'diena' && arLyja === true && temp >= kadasilta){
 //         console.log('Diena, lyja, silta');        
 //     } else if (parosMetas === 'diena' && arLyja === true && temp < kadasilta){
@@ -154,16 +154,16 @@ if (diena % 7 === 1) {
 //         console.log('Naktis, nelyja, salta');
 //     }
 
-//     console.clear()
+    // console.clear();
 
-//     const g = 7;
-//     const h = 5;
+    // const g = 7;
+    // const h = 7;
 
-//     if (g > h) {
-//         console.log('Daugiau');
-//     } else {
-//         console.log('Ne daugiau');
-//     }
+    // if (g > h) {
+    //     console.log('Daugiau');
+    // } else {
+    //     console.log('Ne daugiau');
+    // }
 
 //     // !== vs != 
 //     // === vs == : !=, == - leidzia palyginti reiksmes net ir skirtingu tipu
@@ -175,19 +175,19 @@ if (diena % 7 === 1) {
 //     console.log(false);
 // }
 
-// const w = 'abba';
-// const e = 'boney m';
+const w = 1;
+const e = 'A';
 
-// if (w > e) {
-//     console.log(`'${w}' yra daugiau uz '${e}'`);
-// } else {
-//     console.log(`'${w}' yra maziau arba lygu uz '${e}'`);
-// }
+if (w > e) {
+    console.log(`'${w}' yra daugiau uz '${e}'`);
+} else {
+    console.log(`'${w}' yra maziau arba lygu uz '${e}'`);
+}
 
-// // !true
-// // !false
-// if (!false){
-//     console.log('gg')
-// } else {
-//     console.log('fail...')
-// }
+// !true
+// !false
+if (!true){
+    console.log('true')
+} else {
+    console.log('false')
+}
