@@ -227,3 +227,128 @@ function createArray(number){
 }
 
 console.log(createArray(5));
+
+//celsius = (fahrenheit - 32) * (5/9)
+
+// function weatherInfo(temp){
+//   var c = convertToCelsius(temp)
+//   if (c <= 0) {
+//     return (`${c} is freezing temperature`)
+//   } else {
+//     return (`${c} is above freezing temperature`)
+//   }
+// }
+
+// function convertToCelsius (temperature) {
+//   var celsius = (temperature - 32) * (5/9)
+//   return celsius
+// }
+// console.log(weatherInfo(60))
+
+function weatherInfo(t){
+  c = (t - 32) * 5 / 9;
+  return c <= 0 ? `${c} is freezing temperature` : `${c} is above freezing temperature`;
+}
+console.log(weatherInfo(70));
+
+// function checkForFactor (base, factor) {
+//      if (base % factor === 0){
+//      return true
+//    } else {
+//      return false
+//    }
+//  }
+// console.log(checkForFactor(7, 3));
+
+const checkForFactor = (base, factor) => base % factor === 0
+console.log(checkForFactor(20, 5));
+
+function abc(num){
+  let sum = 0
+  for (let i = 0; i <= num; i++) {
+    sum += i;
+  }
+    return sum;
+}
+console.log(abc(23));
+
+const paperwork = (n, m) => n < 0 || m < 0 ? 0 : n * m;
+console.log(paperwork(5, 3));
+
+
+for (let i = 5; i > 0; i--){
+  console.log(i);
+}
+
+console.clear()
+
+// const tips = a => (a <= 300 && a >=50) ?  a + a * 0.15 : a + a * 0.20;
+
+function tips(a){
+  if (a <= 300 && a >=50){
+    return (a + a * 0.15);
+  } else {
+    return (a + a * 0.2);
+  }
+}
+console.log(tips(60 ));
+
+// const d = new Date();
+// year = d.getFullYear();
+// console.log(year);
+
+console.clear();
+
+// const d = new Date();
+// month = d.getMonth();
+// console.log(month);
+
+const d = new Date();
+d.setFullYear(2020);
+console.log(d);
+console.log(d);
+
+let r = Math.random();
+console.log(r);
+
+// let x = Math.max(5, 100, 57);
+// console.log(x);
+
+let z = Math.round(6.51)
+console.log(z);
+
+let x = Math.sqrt(9);
+console.log(x);
+
+for (let i = 0; i <= 9; i++) {
+  console.log(i);
+}
+
+const fruits = ["Apple", "Banana", "Orange"];
+for (x of fruits);
+console.log(x); 
+
+let i = 0
+while (i < 10){
+  console.log(i); 
+  i++
+}
+console.clear();
+
+for (i = 0; i < 10; i++){
+  console.log(i);
+  if (i === 5){
+    break;
+  }
+}
+
+
+console.clear();
+
+for (i = 0; i < 10; i++){
+  if (i === 5);{
+  continue;
+  }
+  console.log(i);
+}
+console.log(i);
