@@ -108,7 +108,7 @@ f.age = '35';
 console.log('e:', e);
 console.log('f:', f);
 
-
+//13tas video ~50min:
 const abc = {
     65: a
 }

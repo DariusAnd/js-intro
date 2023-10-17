@@ -153,6 +153,11 @@ if (diena % 7 === 1) {
 //     } else if (parosMetas === 'naktis' && arLyja === false && temp < kadasilta) {
 //         console.log('Naktis, nelyja, salta');
 //     }
+        // arLyja === true galima pakeisti tiesiog 'arLyja' !!!
+        // arLyja === false galima pakeisti tiesiog '!arLyja' !!!
+
+
+
 
     // console.clear();
 

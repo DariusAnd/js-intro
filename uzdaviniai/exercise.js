@@ -352,3 +352,39 @@ for (i = 0; i < 10; i++){
   console.log(i);
 }
 console.log(i);
+console.clear();
+/*
+1. Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus
+ vardą ir pavardę kaip stringus (Jonas Jonaitis). 
+ Atspausdinti trumpesnį stringą.
+*/
+
+const name3 = 'Vardelis';
+const sName = 'Pavardis';
+function lName(name3, sName){
+  if (name3.length < sName.length){
+    return name3;
+  } else if (name3.length === sName.length) {
+    return name3 + ' ' + sName;
+  } else {
+    return sName;
+  }
+}
+console.log(lName(name3, sName));
+
+/*
+2. Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, 
+pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). 
+Parašykite kodą, kuris pagal gimimo metus paskaičiuotų 
+jūsų amžių ir naudodamas vardo ir pavardės kintamuosius 
+atspausdintų tokį sakinį :
+"Aš esu Vardenis Pavardenis. Man yra XX metai(ų)".
+*/
+
+
+const name4 = 'Saulius';
+const surName = 'Saulenis';
+const bYear = 1985;
+const year = 2023;
+const answer = `Aš esu ${name4} ${surName}. Man yra ${year - bYear} metai(ų).`
+console.log(answer);

@@ -1,0 +1,8 @@
+
+0 irgi yra lyginis skaicius.
+4 yra lyginis skaicius.
+-4 yra neigiamas skaicius.
+3 nera lyginis skaicius.
+-3 nera neigiamas lyginis skaicius.
+3.14 nera lyginis skaicius, nes desimtainiai skaiciai niekada nebuna lyginiai.
+-3.14 nera lyginis skaicius, nes desimtainiai skaiciai niekada nebuna lyginiai.
