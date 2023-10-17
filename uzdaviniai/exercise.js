@@ -359,18 +359,19 @@ console.clear();
  Atspausdinti trumpesnį stringą.
 */
 
-const name3 = 'Vardelis';
+const fName = 'Vardelis';
 const sName = 'Pavardis';
-function lName(name3, sName){
-  if (name3.length < sName.length){
-    return name3;
-  } else if (name3.length === sName.length) {
-    return name3 + ' ' + sName;
+function lName(fName, sName){
+  if (fName.length < sName.length){
+    return fName;
+  } else if (fName.length === sName.length) {
+    return fName + ' ' + sName;
   } else {
     return sName;
   }
 }
-console.log(lName(name3, sName));
+console.log(lName(fName, sName));
+console.log('---------------------');
 
 /*
 2. Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, 
@@ -388,3 +389,201 @@ const bYear = 1985;
 const year = 2023;
 const answer = `Aš esu ${name4} ${surName}. Man yra ${year - bYear} metai(ų).`
 console.log(answer);
+console.log('---------------------');
+
+/* 
+3. Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir 
+pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, 
+sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+*/
+const actName = 'Tas';
+const actsName = 'Anas';
+const newName = actName.slice(-3) + actsName.slice(-3);
+// arba:
+const newName1 = actName.substring(actName.length-3) + actsName.substring(actsName.length-3);
+console.log(newName, newName1)
+console.log('---------------------');
+/* 
+
+4. Sukurti kintamąjį su stringu: “Once upon a time in hollywood”. 
+Jame visas “o” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  
+Rezultatą atspausdinti.
+*/
+const s = 'Once upon a time in hollywood';
+function replace(string) {
+  const toReplace = new RegExp('[oO]', 'g');
+  const replacement = '*';
+  return string.replace(toReplace, replacement);
+}
+console.log(replace(s));
+console.log('---------------------');
+
+//  arba:
+
+const x1 = s.split(/[Oo]/).join('*');
+console.log(x1);
+console.log('---------------------');
+
+// ARBA:
+
+function tale() {
+  const str = 'Once upon a time in hollywood';
+  const strToLower = str.toLowerCase();
+  let result = '';
+  for (let i = 0; i < strToLower.length; i++) {
+    if (strToLower[i] === 'o') {
+      result += '*';
+    } else {
+      result += str[i];
+    }
+  }
+  return result;
+}
+console.log(tale());
+console.log('---------------------');
+/* 
+5. Sukurkite keturis kintamuosius kuriems sugeneruokite 
+atsitiktines reikšmes nuo 0 iki 2. 
+Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. 
+*/
+function rand(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+function random(){
+  const r1 = rand(0, 2);
+  const r2 = rand(0, 2);
+  const r3 = rand(0, 2);
+  const r4 = rand(0, 2);
+  
+  let zeros = 0;
+  let ones = 0;
+  let twos = 0;
+
+  rArray = [r1, r2, r3, r4];
+  console.log(rArray);
+
+  for (let i = 0; i < rArray.length; i++){
+    if (rArray[i] === 0) { zeros++};
+    if (rArray[i] === 1) { ones++};
+    if (rArray[i] === 2) { twos++};  
+  }
+  return `0 = ${zeros}, 1 = ${ones}, 2 = ${twos}.`
+}
+console.log(random());
+console.log('---------------------');
+
+/* 
+6. Pasinaudokite atsitiktinio skaičiaus generavimo funkcija. 
+Sukurkite du kintamuosius ir naudodamiesi funkcija 
+jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. 
+Didesnę reikšmę padalinkite iš mažesnės. 
+Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.
+*/
+const num1 = Math.random() * 4;
+const num2 = Math.random() * 4;
+
+let result = num1 > num2 ? num1 / num2 : num2 / num1;
+
+console.log(num1.toFixed(4));
+console.log(num2.toFixed(4));
+console.log(result.toFixed(2));
+console.log('---------------------');
+
+function rand(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+const c1 = rand(1, 4);
+const c2 = rand(1, 4);
+const result1 = c1 > c2 ? c1 / c2 : c2 / c1;
+
+console.log(c1);
+console.log(c2);
+console.log(result1.toFixed(2));
+console.log('---------------------');
+
+
+/* 
+7. Naudokite funkciją ir sukurkite tris kintamuosius kuriems priskirkite atsitiktines
+reikšmes nuo 0 iki 25. Raskite ir atspausdinkite vidurinę reikšmę.
+*/
+// (function(rand) - vesims sprendemams is 5ta uzdaven.)
+
+const varThree = rand(0, 25);
+const varFour  = rand(0, 25);
+const varFive  = rand(0, 25);
+
+function cmp(a, b) {
+    return a - b;
+  }
+  
+  const arr2 = [varThree, varFour, varFive].sort(cmp);
+  console.log(arr2);
+  console.log("Vidurinė reikšmė yra: ", arr2[1]);
+  console.log('---------------------');
+  
+  // arba: 
+  
+  function randMid(){
+    const m1 = rand(0, 25);
+    const m2 = rand(0, 25);
+    const m3 = rand(0, 25);
+    
+    const rArr = [m1, m2, m3];
+    console.log(rArr);
+    
+    let minNum = rArr[0];
+    let maxNum = rArr[0];
+    let minNumIndex = 0;
+    let maxNumIndex = 0;
+    let midNum = 0;
+    
+    for(let i = 0; i < rArr.length; i++){
+      if(rArr[i] < minNum){
+        minNum = rArr[i];
+        minNumIndex = i;
+      }
+      if(rArr[i] > maxNum){
+        maxNum = rArr[i];
+      maxNumIndex = i;
+    }
+    for(let i = 0; i < rArr.length; i++){
+      if(i !== maxNumIndex && i !== minNumIndex){
+        return midNum = rArr[i];
+      }
+    }
+    return midNum;
+  }
+}
+console.log(randMid());
+console.log('---------------------');
+
+
+
+/* 
+8. Sukurti du kintamuosius. 
+Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. 
+Sukurti trečią kintamąjį ir jam priskirti stringą, 
+sudarytą iš pirmų vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+*/
+const nameBoth = actName[0] + actsName[0];
+console.log(nameBoth);
+console.log('---------------------');
+/* 
+9. Parašyti kodą, kuris generuotų atsitiktinį stringą iš lotyniškų mažųjų raidžių. 
+Stringo ilgis 3 simboliai.
+*/
+
+function randomString(n){
+  let result = '';
+  for(let i =0; i < n; i++){
+    result += String.fromCharCode(rand(97 ,122));
+  }
+  return result
+}
+console.log(randomString(5));
+console.log('---------------------');
+console.log(String.fromCharCode(97, 122));
