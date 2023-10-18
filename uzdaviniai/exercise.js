@@ -587,3 +587,28 @@ function randomString(n){
 console.log(randomString(5));
 console.log('---------------------');
 console.log(String.fromCharCode(97, 122));
+console.log('---------------------');
+
+function peopleWithAgeDrink(old) {
+  if (old < 14){
+    return 'drink toddy';
+  } else if (old >= 14 && old < 18) {
+    return 'drink coke';
+  } else if ( old >= 18 && old < 21){
+    return 'drink beer';
+  } else {
+    return 'drink whisky';
+  }
+};
+console.log(peopleWithAgeDrink(20));
+console.log('---------------------');
+
+function getAverage(marks){
+  let totalSum = 0;
+  for (let i = 0; i < marks.length; i++){
+    totalSum += marks[i];
+  }
+  aver = Math.floor(totalSum / marks.length);
+  return aver
+}
+console.log(getAverage([16,8,3,12,9,15,10,2,13,13,19,4,14,17,8,7,8,2,5]));
