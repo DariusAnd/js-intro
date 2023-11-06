@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "destruct": "nodemon ./kintamieji/destruct.js",
     "method:array-loops": "nodemon ./method/array-loops.js",
     "method:array": "nodemon ./method/array.js",
     "method:string": "nodemon ./method/string.js",
