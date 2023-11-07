@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "class-extends": "nodemon ./funkcijos/class-extends.js",
+    "class": "nodemon ./funkcijos/class.js",
     "destruct": "nodemon ./kintamieji/destruct.js",
     "method:array-loops": "nodemon ./method/array-loops.js",
     "method:array": "nodemon ./method/array.js",
